@@ -75,16 +75,16 @@ extension Provider {
         // Define values for the Provider model
         let url = "https://sports.yahoo.com/"
         let displayName = "Yahoo Sports"
-        let logo = Logo(type: .lightlogo, originalUrl: "https://s.yimg.com/os/creatr-uploaded-images/2021-02/b6728df0-6bdc-11eb-b7bd-913b7afc7515", originalHeight: 400, originalWidth: 400, resolutions: [
+        let logo = Logo(type: "lightlogo", originalUrl: "https://s.yimg.com/os/creatr-uploaded-images/2021-02/b6728df0-6bdc-11eb-b7bd-913b7afc7515", originalHeight: 400, originalWidth: 400, resolutions: [
             Resolution(tag: "original", url: "https://s.yimg.com/uu/api/res/1.2/2lVDVggwaje9HT.QojjqWA--~B/aD00MDA7dz00MDA7YXBwaWQ9eXRhY2h5b24-/https://s.yimg.com/os/creatr-uploaded-images/2021-02/b6728df0-6bdc-11eb-b7bd-913b7afc7515", width: 400, height: 400),
             Resolution(tag: "100x50", url: "https://s.yimg.com/uu/api/res/1.2/OfyjfiwFG_W4Dqwyad2vcw--~B/Zmk9ZmlsbDtoPTUwO3B5b2ZmPTA7dz0xMDA7YXBwaWQ9eXRhY2h5b24-/https://s.yimg.com/os/creatr-uploaded-images/2021-02/b6728df0-6bdc-11eb-b7bd-913b7afc7515", width: 100, height: 50)
         ])
         
-        let lightLogo = Logo( type: .lightlogo, originalUrl: "https://s.yimg.com/os/creatr-uploaded-images/2021-02/d6cfeca0-6bdc-11eb-9fff-072dbeffa160", originalHeight: 100, originalWidth: 469, resolutions: [
+        let lightLogo = Logo( type: "lightlogo", originalUrl: "https://s.yimg.com/os/creatr-uploaded-images/2021-02/d6cfeca0-6bdc-11eb-9fff-072dbeffa160", originalHeight: 100, originalWidth: 469, resolutions: [
             Resolution(tag: "original", url: "https://s.yimg.com/uu/api/res/1.2/F1BfKNybxRwKZSbWsVVdAw--~B/aD0xMDA7dz00Njk7YXBwaWQ9eXRhY2h5b24-/https://s.yimg.com/os/creatr-uploaded-images/2021-02/d6cfeca0-6bdc-11eb-9fff-072dbeffa160", width: 469, height: 100),
             Resolution(tag: "100x50", url: "https://s.yimg.com/uu/api/res/1.2/tv97T9BRLtnTtOL3dBusIQ--~B/Zmk9ZmlsbDtoPTUwO3B5b2ZmPTA7dz0xMDA7YXBwaWQ9eXRhY2h5b24-/https://s.yimg.com/os/creatr-uploaded-images/2021-02/d6cfeca0-6bdc-11eb-9fff-072dbeffa160", width: 100, height: 50)
         ])
-        let darkLogo = Logo(type: .darklogo, originalUrl: "https://s.yimg.com/os/creatr-uploaded-images/2021-02/eea32ae0-6bdc-11eb-bf5e-5d7f15d13ff6", originalHeight: 100, originalWidth: 513,  resolutions: [
+        let darkLogo = Logo( type: "darklogo", originalUrl: "https://s.yimg.com/os/creatr-uploaded-images/2021-02/eea32ae0-6bdc-11eb-bf5e-5d7f15d13ff6", originalHeight: 100, originalWidth: 513,  resolutions: [
             Resolution(tag: "original", url: "https://s.yimg.com/uu/api/res/1.2/L5r8ccvvGTp4fcoafLKCAg--~B/aD0xMDA7dz01MTM7YXBwaWQ9eXRhY2h5b24-/https://s.yimg.com/os/creatr-uploaded-images/2021-02/eea32ae0-6bdc-11eb-bf5e-5d7f15d13ff6", width: 513, height: 100),
             Resolution(tag: "100x50", url: "https://s.yimg.com/uu/api/res/1.2/8ivOqKUcScynOSokmb5x4g--~B/Zmk9ZmlsbDtoPTUwO3B5b2ZmPTA7dz0xMDA7YXBwaWQ9eXRhY2h5b24-/https://s.yimg.com/os/creatr-uploaded-images/2021-02/eea32ae0-6bdc-11eb-bf5e-5d7f15d13ff6", width: 100, height: 50)
         ])

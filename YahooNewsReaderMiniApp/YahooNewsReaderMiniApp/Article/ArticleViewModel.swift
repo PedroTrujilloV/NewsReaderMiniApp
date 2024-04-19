@@ -7,7 +7,7 @@
 
 import Foundation
 
-class ArticleViewModel: ObservableObject {
+class ArticleViewModel: ObservableObject, Identifiable {
     @Published var thumbnailURL: URL?
     @Published var provider: String
     @Published var title: String
