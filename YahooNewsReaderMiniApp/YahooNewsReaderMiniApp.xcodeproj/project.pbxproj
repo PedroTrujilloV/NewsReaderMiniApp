@@ -1,0 +1,597 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C807FCA32BD2E029009AC277 /* YahooNewsReaderMiniAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C807FCA22BD2E029009AC277 /* YahooNewsReaderMiniAppApp.swift */; };
+		C807FCA52BD2E029009AC277 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C807FCA42BD2E029009AC277 /* ContentView.swift */; };
+		C807FCA72BD2E029009AC277 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = C807FCA62BD2E029009AC277 /* Item.swift */; };
+		C807FCA92BD2E02C009AC277 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C807FCA82BD2E02C009AC277 /* Assets.xcassets */; };
+		C807FCAC2BD2E02C009AC277 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C807FCAB2BD2E02C009AC277 /* Preview Assets.xcassets */; };
+		C807FCB62BD2E02C009AC277 /* YahooNewsReaderMiniAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C807FCB52BD2E02C009AC277 /* YahooNewsReaderMiniAppTests.swift */; };
+		C807FCC02BD2E02D009AC277 /* YahooNewsReaderMiniAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C807FCBF2BD2E02D009AC277 /* YahooNewsReaderMiniAppUITests.swift */; };
+		C807FCC22BD2E02D009AC277 /* YahooNewsReaderMiniAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C807FCC12BD2E02D009AC277 /* YahooNewsReaderMiniAppUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C807FCB22BD2E02C009AC277 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C807FC972BD2E029009AC277 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C807FC9E2BD2E029009AC277;
+			remoteInfo = YahooNewsReaderMiniApp;
+		};
+		C807FCBC2BD2E02D009AC277 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C807FC972BD2E029009AC277 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C807FC9E2BD2E029009AC277;
+			remoteInfo = YahooNewsReaderMiniApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C807FC9F2BD2E029009AC277 /* YahooNewsReaderMiniApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YahooNewsReaderMiniApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C807FCA22BD2E029009AC277 /* YahooNewsReaderMiniAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YahooNewsReaderMiniAppApp.swift; sourceTree = "<group>"; };
+		C807FCA42BD2E029009AC277 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C807FCA62BD2E029009AC277 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		C807FCA82BD2E02C009AC277 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C807FCAB2BD2E02C009AC277 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C807FCB12BD2E02C009AC277 /* YahooNewsReaderMiniAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YahooNewsReaderMiniAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C807FCB52BD2E02C009AC277 /* YahooNewsReaderMiniAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YahooNewsReaderMiniAppTests.swift; sourceTree = "<group>"; };
+		C807FCBB2BD2E02D009AC277 /* YahooNewsReaderMiniAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YahooNewsReaderMiniAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C807FCBF2BD2E02D009AC277 /* YahooNewsReaderMiniAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YahooNewsReaderMiniAppUITests.swift; sourceTree = "<group>"; };
+		C807FCC12BD2E02D009AC277 /* YahooNewsReaderMiniAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YahooNewsReaderMiniAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C807FC9C2BD2E029009AC277 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C807FCAE2BD2E02C009AC277 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C807FCB82BD2E02D009AC277 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C807FC962BD2E029009AC277 = {
+			isa = PBXGroup;
+			children = (
+				C807FCA12BD2E029009AC277 /* YahooNewsReaderMiniApp */,
+				C807FCB42BD2E02C009AC277 /* YahooNewsReaderMiniAppTests */,
+				C807FCBE2BD2E02D009AC277 /* YahooNewsReaderMiniAppUITests */,
+				C807FCA02BD2E029009AC277 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C807FCA02BD2E029009AC277 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C807FC9F2BD2E029009AC277 /* YahooNewsReaderMiniApp.app */,
+				C807FCB12BD2E02C009AC277 /* YahooNewsReaderMiniAppTests.xctest */,
+				C807FCBB2BD2E02D009AC277 /* YahooNewsReaderMiniAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C807FCA12BD2E029009AC277 /* YahooNewsReaderMiniApp */ = {
+			isa = PBXGroup;
+			children = (
+				C807FCA22BD2E029009AC277 /* YahooNewsReaderMiniAppApp.swift */,
+				C807FCA42BD2E029009AC277 /* ContentView.swift */,
+				C807FCA62BD2E029009AC277 /* Item.swift */,
+				C807FCA82BD2E02C009AC277 /* Assets.xcassets */,
+				C807FCAA2BD2E02C009AC277 /* Preview Content */,
+			);
+			path = YahooNewsReaderMiniApp;
+			sourceTree = "<group>";
+		};
+		C807FCAA2BD2E02C009AC277 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C807FCAB2BD2E02C009AC277 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C807FCB42BD2E02C009AC277 /* YahooNewsReaderMiniAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				C807FCB52BD2E02C009AC277 /* YahooNewsReaderMiniAppTests.swift */,
+			);
+			path = YahooNewsReaderMiniAppTests;
+			sourceTree = "<group>";
+		};
+		C807FCBE2BD2E02D009AC277 /* YahooNewsReaderMiniAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C807FCBF2BD2E02D009AC277 /* YahooNewsReaderMiniAppUITests.swift */,
+				C807FCC12BD2E02D009AC277 /* YahooNewsReaderMiniAppUITestsLaunchTests.swift */,
+			);
+			path = YahooNewsReaderMiniAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C807FC9E2BD2E029009AC277 /* YahooNewsReaderMiniApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C807FCC52BD2E02D009AC277 /* Build configuration list for PBXNativeTarget "YahooNewsReaderMiniApp" */;
+			buildPhases = (
+				C807FC9B2BD2E029009AC277 /* Sources */,
+				C807FC9C2BD2E029009AC277 /* Frameworks */,
+				C807FC9D2BD2E029009AC277 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YahooNewsReaderMiniApp;
+			productName = YahooNewsReaderMiniApp;
+			productReference = C807FC9F2BD2E029009AC277 /* YahooNewsReaderMiniApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C807FCB02BD2E02C009AC277 /* YahooNewsReaderMiniAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C807FCC82BD2E02D009AC277 /* Build configuration list for PBXNativeTarget "YahooNewsReaderMiniAppTests" */;
+			buildPhases = (
+				C807FCAD2BD2E02C009AC277 /* Sources */,
+				C807FCAE2BD2E02C009AC277 /* Frameworks */,
+				C807FCAF2BD2E02C009AC277 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C807FCB32BD2E02C009AC277 /* PBXTargetDependency */,
+			);
+			name = YahooNewsReaderMiniAppTests;
+			productName = YahooNewsReaderMiniAppTests;
+			productReference = C807FCB12BD2E02C009AC277 /* YahooNewsReaderMiniAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C807FCBA2BD2E02D009AC277 /* YahooNewsReaderMiniAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C807FCCB2BD2E02D009AC277 /* Build configuration list for PBXNativeTarget "YahooNewsReaderMiniAppUITests" */;
+			buildPhases = (
+				C807FCB72BD2E02D009AC277 /* Sources */,
+				C807FCB82BD2E02D009AC277 /* Frameworks */,
+				C807FCB92BD2E02D009AC277 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C807FCBD2BD2E02D009AC277 /* PBXTargetDependency */,
+			);
+			name = YahooNewsReaderMiniAppUITests;
+			productName = YahooNewsReaderMiniAppUITests;
+			productReference = C807FCBB2BD2E02D009AC277 /* YahooNewsReaderMiniAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C807FC972BD2E029009AC277 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					C807FC9E2BD2E029009AC277 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					C807FCB02BD2E02C009AC277 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = C807FC9E2BD2E029009AC277;
+					};
+					C807FCBA2BD2E02D009AC277 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = C807FC9E2BD2E029009AC277;
+					};
+				};
+			};
+			buildConfigurationList = C807FC9A2BD2E029009AC277 /* Build configuration list for PBXProject "YahooNewsReaderMiniApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C807FC962BD2E029009AC277;
+			productRefGroup = C807FCA02BD2E029009AC277 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C807FC9E2BD2E029009AC277 /* YahooNewsReaderMiniApp */,
+				C807FCB02BD2E02C009AC277 /* YahooNewsReaderMiniAppTests */,
+				C807FCBA2BD2E02D009AC277 /* YahooNewsReaderMiniAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C807FC9D2BD2E029009AC277 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C807FCAC2BD2E02C009AC277 /* Preview Assets.xcassets in Resources */,
+				C807FCA92BD2E02C009AC277 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C807FCAF2BD2E02C009AC277 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C807FCB92BD2E02D009AC277 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C807FC9B2BD2E029009AC277 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C807FCA52BD2E029009AC277 /* ContentView.swift in Sources */,
+				C807FCA72BD2E029009AC277 /* Item.swift in Sources */,
+				C807FCA32BD2E029009AC277 /* YahooNewsReaderMiniAppApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C807FCAD2BD2E02C009AC277 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C807FCB62BD2E02C009AC277 /* YahooNewsReaderMiniAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C807FCB72BD2E02D009AC277 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C807FCC22BD2E02D009AC277 /* YahooNewsReaderMiniAppUITestsLaunchTests.swift in Sources */,
+				C807FCC02BD2E02D009AC277 /* YahooNewsReaderMiniAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C807FCB32BD2E02C009AC277 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C807FC9E2BD2E029009AC277 /* YahooNewsReaderMiniApp */;
+			targetProxy = C807FCB22BD2E02C009AC277 /* PBXContainerItemProxy */;
+		};
+		C807FCBD2BD2E02D009AC277 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C807FC9E2BD2E029009AC277 /* YahooNewsReaderMiniApp */;
+			targetProxy = C807FCBC2BD2E02D009AC277 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C807FCC32BD2E02D009AC277 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C807FCC42BD2E02D009AC277 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C807FCC62BD2E02D009AC277 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"YahooNewsReaderMiniApp/Preview Content\"";
+				DEVELOPMENT_TEAM = S775VU6U75;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = PedroTrujilloVTest.YahooNewsReaderMiniApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C807FCC72BD2E02D009AC277 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"YahooNewsReaderMiniApp/Preview Content\"";
+				DEVELOPMENT_TEAM = S775VU6U75;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = PedroTrujilloVTest.YahooNewsReaderMiniApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C807FCC92BD2E02D009AC277 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S775VU6U75;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = PedroTrujilloVTest.YahooNewsReaderMiniAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YahooNewsReaderMiniApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/YahooNewsReaderMiniApp";
+			};
+			name = Debug;
+		};
+		C807FCCA2BD2E02D009AC277 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S775VU6U75;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = PedroTrujilloVTest.YahooNewsReaderMiniAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YahooNewsReaderMiniApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/YahooNewsReaderMiniApp";
+			};
+			name = Release;
+		};
+		C807FCCC2BD2E02D009AC277 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S775VU6U75;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = PedroTrujilloVTest.YahooNewsReaderMiniAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YahooNewsReaderMiniApp;
+			};
+			name = Debug;
+		};
+		C807FCCD2BD2E02D009AC277 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S775VU6U75;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = PedroTrujilloVTest.YahooNewsReaderMiniAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YahooNewsReaderMiniApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C807FC9A2BD2E029009AC277 /* Build configuration list for PBXProject "YahooNewsReaderMiniApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C807FCC32BD2E02D009AC277 /* Debug */,
+				C807FCC42BD2E02D009AC277 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C807FCC52BD2E02D009AC277 /* Build configuration list for PBXNativeTarget "YahooNewsReaderMiniApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C807FCC62BD2E02D009AC277 /* Debug */,
+				C807FCC72BD2E02D009AC277 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C807FCC82BD2E02D009AC277 /* Build configuration list for PBXNativeTarget "YahooNewsReaderMiniAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C807FCC92BD2E02D009AC277 /* Debug */,
+				C807FCCA2BD2E02D009AC277 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C807FCCB2BD2E02D009AC277 /* Build configuration list for PBXNativeTarget "YahooNewsReaderMiniAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C807FCCC2BD2E02D009AC277 /* Debug */,
+				C807FCCD2BD2E02D009AC277 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C807FC972BD2E029009AC277 /* Project object */;
+}
