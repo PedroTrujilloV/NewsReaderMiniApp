@@ -16,6 +16,10 @@
 		C807FCC02BD2E02D009AC277 /* YahooNewsReaderMiniAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C807FCBF2BD2E02D009AC277 /* YahooNewsReaderMiniAppUITests.swift */; };
 		C807FCC22BD2E02D009AC277 /* YahooNewsReaderMiniAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C807FCC12BD2E02D009AC277 /* YahooNewsReaderMiniAppUITestsLaunchTests.swift */; };
 		C807FCCF2BD2E07C009AC277 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C807FCCE2BD2E07C009AC277 /* README.md */; };
+		C807FCD12BD2E497009AC277 /* ArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C807FCD02BD2E497009AC277 /* ArticleView.swift */; };
+		C807FCD32BD2E75A009AC277 /* ArticleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C807FCD22BD2E75A009AC277 /* ArticleViewModel.swift */; };
+		C807FCD52BD2EA49009AC277 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = C807FCD42BD2EA49009AC277 /* Article.swift */; };
+		C807FCD72BD30020009AC277 /* Article+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C807FCD62BD30020009AC277 /* Article+Mock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +52,10 @@
 		C807FCBF2BD2E02D009AC277 /* YahooNewsReaderMiniAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YahooNewsReaderMiniAppUITests.swift; sourceTree = "<group>"; };
 		C807FCC12BD2E02D009AC277 /* YahooNewsReaderMiniAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YahooNewsReaderMiniAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C807FCCE2BD2E07C009AC277 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		C807FCD02BD2E497009AC277 /* ArticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleView.swift; sourceTree = "<group>"; };
+		C807FCD22BD2E75A009AC277 /* ArticleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewModel.swift; sourceTree = "<group>"; };
+		C807FCD42BD2EA49009AC277 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		C807FCD62BD30020009AC277 /* Article+Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Article+Mock.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +109,10 @@
 			children = (
 				C807FCA22BD2E029009AC277 /* YahooNewsReaderMiniAppApp.swift */,
 				C807FCA42BD2E029009AC277 /* ContentView.swift */,
+				C807FCD02BD2E497009AC277 /* ArticleView.swift */,
+				C807FCD22BD2E75A009AC277 /* ArticleViewModel.swift */,
+				C807FCD42BD2EA49009AC277 /* Article.swift */,
+				C807FCD62BD30020009AC277 /* Article+Mock.swift */,
 				C807FCA62BD2E029009AC277 /* Item.swift */,
 				C807FCA82BD2E02C009AC277 /* Assets.xcassets */,
 				C807FCAA2BD2E02C009AC277 /* Preview Content */,
@@ -265,8 +277,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C807FCA52BD2E029009AC277 /* ContentView.swift in Sources */,
+				C807FCD72BD30020009AC277 /* Article+Mock.swift in Sources */,
 				C807FCA72BD2E029009AC277 /* Item.swift in Sources */,
+				C807FCD52BD2EA49009AC277 /* Article.swift in Sources */,
 				C807FCA32BD2E029009AC277 /* YahooNewsReaderMiniAppApp.swift in Sources */,
+				C807FCD32BD2E75A009AC277 /* ArticleViewModel.swift in Sources */,
+				C807FCD12BD2E497009AC277 /* ArticleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
