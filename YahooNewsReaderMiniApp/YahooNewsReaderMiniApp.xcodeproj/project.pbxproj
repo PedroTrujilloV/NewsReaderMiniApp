@@ -15,6 +15,7 @@
 		C807FCB62BD2E02C009AC277 /* YahooNewsReaderMiniAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C807FCB52BD2E02C009AC277 /* YahooNewsReaderMiniAppTests.swift */; };
 		C807FCC02BD2E02D009AC277 /* YahooNewsReaderMiniAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C807FCBF2BD2E02D009AC277 /* YahooNewsReaderMiniAppUITests.swift */; };
 		C807FCC22BD2E02D009AC277 /* YahooNewsReaderMiniAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C807FCC12BD2E02D009AC277 /* YahooNewsReaderMiniAppUITestsLaunchTests.swift */; };
+		C807FCCF2BD2E07C009AC277 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C807FCCE2BD2E07C009AC277 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		C807FCBB2BD2E02D009AC277 /* YahooNewsReaderMiniAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YahooNewsReaderMiniAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C807FCBF2BD2E02D009AC277 /* YahooNewsReaderMiniAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YahooNewsReaderMiniAppUITests.swift; sourceTree = "<group>"; };
 		C807FCC12BD2E02D009AC277 /* YahooNewsReaderMiniAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YahooNewsReaderMiniAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C807FCCE2BD2E07C009AC277 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 		C807FC962BD2E029009AC277 = {
 			isa = PBXGroup;
 			children = (
+				C807FCCE2BD2E07C009AC277 /* README.md */,
 				C807FCA12BD2E029009AC277 /* YahooNewsReaderMiniApp */,
 				C807FCB42BD2E02C009AC277 /* YahooNewsReaderMiniAppTests */,
 				C807FCBE2BD2E02D009AC277 /* YahooNewsReaderMiniAppUITests */,
@@ -234,6 +237,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C807FCCF2BD2E07C009AC277 /* README.md in Resources */,
 				C807FCAC2BD2E02C009AC277 /* Preview Assets.xcassets in Resources */,
 				C807FCA92BD2E02C009AC277 /* Assets.xcassets in Resources */,
 			);
