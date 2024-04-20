@@ -24,6 +24,10 @@
 		C807FCDE2BD314D0009AC277 /* mockJSONDataResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = C807FCDD2BD314D0009AC277 /* mockJSONDataResponse.json */; };
 		C807FCE02BD31653009AC277 /* NewsStreamViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C807FCDF2BD31653009AC277 /* NewsStreamViewModel.swift */; };
 		C807FCE22BD32EE2009AC277 /* NewsStreamViewModel+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C807FCE12BD32EE2009AC277 /* NewsStreamViewModel+Mock.swift */; };
+		C807FCE82BD37FF0009AC277 /* NewsStreamService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C807FCE72BD37FF0009AC277 /* NewsStreamService.swift */; };
+		C807FCEA2BD39E45009AC277 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C807FCE92BD39E45009AC277 /* APIService.swift */; };
+		C807FCEC2BD3ACCD009AC277 /* NewsStreamRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C807FCEB2BD3ACCD009AC277 /* NewsStreamRepository.swift */; };
+		C807FCEE2BD4369E009AC277 /* NewsStreamResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C807FCED2BD4369E009AC277 /* NewsStreamResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +68,10 @@
 		C807FCDD2BD314D0009AC277 /* mockJSONDataResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = mockJSONDataResponse.json; sourceTree = "<group>"; };
 		C807FCDF2BD31653009AC277 /* NewsStreamViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsStreamViewModel.swift; sourceTree = "<group>"; };
 		C807FCE12BD32EE2009AC277 /* NewsStreamViewModel+Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewsStreamViewModel+Mock.swift"; sourceTree = "<group>"; };
+		C807FCE72BD37FF0009AC277 /* NewsStreamService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsStreamService.swift; sourceTree = "<group>"; };
+		C807FCE92BD39E45009AC277 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		C807FCEB2BD3ACCD009AC277 /* NewsStreamRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsStreamRepository.swift; sourceTree = "<group>"; };
+		C807FCED2BD4369E009AC277 /* NewsStreamResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsStreamResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,13 +124,12 @@
 			isa = PBXGroup;
 			children = (
 				C807FCA22BD2E029009AC277 /* YahooNewsReaderMiniAppApp.swift */,
-				C807FCA42BD2E029009AC277 /* ContentView.swift */,
-				C807FCD92BD30FA2009AC277 /* NewsStreamView.swift */,
-				C807FCDF2BD31653009AC277 /* NewsStreamViewModel.swift */,
-				C807FCE12BD32EE2009AC277 /* NewsStreamViewModel+Mock.swift */,
-				C807FCDD2BD314D0009AC277 /* mockJSONDataResponse.json */,
-				C807FCD82BD30F70009AC277 /* Article */,
 				C807FCA62BD2E029009AC277 /* Item.swift */,
+				C807FCA42BD2E029009AC277 /* ContentView.swift */,
+				C807FCE62BD37FC9009AC277 /* DataSource */,
+				C807FCE52BD37EDD009AC277 /* Domain */,
+				C807FCE42BD37EC9009AC277 /* UI */,
+				C807FCDD2BD314D0009AC277 /* mockJSONDataResponse.json */,
 				C807FCA82BD2E02C009AC277 /* Assets.xcassets */,
 				C807FCAA2BD2E02C009AC277 /* Preview Content */,
 			);
@@ -163,6 +170,43 @@
 				C807FCD62BD30020009AC277 /* Article+Mock.swift */,
 			);
 			path = Article;
+			sourceTree = "<group>";
+		};
+		C807FCE32BD37DDF009AC277 /* NewsStream */ = {
+			isa = PBXGroup;
+			children = (
+				C807FCD92BD30FA2009AC277 /* NewsStreamView.swift */,
+				C807FCDF2BD31653009AC277 /* NewsStreamViewModel.swift */,
+				C807FCE12BD32EE2009AC277 /* NewsStreamViewModel+Mock.swift */,
+			);
+			path = NewsStream;
+			sourceTree = "<group>";
+		};
+		C807FCE42BD37EC9009AC277 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				C807FCD82BD30F70009AC277 /* Article */,
+				C807FCE32BD37DDF009AC277 /* NewsStream */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		C807FCE52BD37EDD009AC277 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				C807FCE72BD37FF0009AC277 /* NewsStreamService.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		C807FCE62BD37FC9009AC277 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				C807FCE92BD39E45009AC277 /* APIService.swift */,
+				C807FCEB2BD3ACCD009AC277 /* NewsStreamRepository.swift */,
+				C807FCED2BD4369E009AC277 /* NewsStreamResponse.swift */,
+			);
+			path = DataSource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -298,7 +342,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C807FCE02BD31653009AC277 /* NewsStreamViewModel.swift in Sources */,
+				C807FCE82BD37FF0009AC277 /* NewsStreamService.swift in Sources */,
 				C807FCA52BD2E029009AC277 /* ContentView.swift in Sources */,
+				C807FCEE2BD4369E009AC277 /* NewsStreamResponse.swift in Sources */,
 				C807FCD72BD30020009AC277 /* Article+Mock.swift in Sources */,
 				C807FCA72BD2E029009AC277 /* Item.swift in Sources */,
 				C807FCDA2BD30FA2009AC277 /* NewsStreamView.swift in Sources */,
@@ -306,7 +352,9 @@
 				C807FCA32BD2E029009AC277 /* YahooNewsReaderMiniAppApp.swift in Sources */,
 				C807FCE22BD32EE2009AC277 /* NewsStreamViewModel+Mock.swift in Sources */,
 				C807FCD32BD2E75A009AC277 /* ArticleViewModel.swift in Sources */,
+				C807FCEA2BD39E45009AC277 /* APIService.swift in Sources */,
 				C807FCD12BD2E497009AC277 /* ArticleView.swift in Sources */,
+				C807FCEC2BD3ACCD009AC277 /* NewsStreamRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

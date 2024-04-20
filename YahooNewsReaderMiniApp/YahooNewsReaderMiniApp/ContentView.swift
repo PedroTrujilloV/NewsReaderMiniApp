@@ -9,8 +9,16 @@ import SwiftUI
 import SwiftData
 
 struct ContentView: View {
+
     var body: some View {
-        NewsStreamView(viewModel: NewsStreamViewModel())
+        let scheduler: DispatchQueue =  .main
+        let repository = NewsStreamRepositoryImplementation(apiService: APIService(),
+                                                            scheduler: scheduler)
+        let newsStreamService = NewsStreamServiceImplementation(repository: repository)
+        let viewModel = NewsStreamViewModel( newsStreamService: newsStreamService ,
+                                            scheduler: scheduler)
+        
+        NewsStreamView(viewModel: viewModel)
             .padding( .horizontal,   -20)
     }
 } 
