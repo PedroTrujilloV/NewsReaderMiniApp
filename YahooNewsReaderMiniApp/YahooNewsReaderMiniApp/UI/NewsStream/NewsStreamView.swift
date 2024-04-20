@@ -36,8 +36,13 @@ struct NewsStreamView: View {
 
 struct NewsStreamView_Previews: PreviewProvider {
     static var previews: some View {
-        let viewModel = NewsStreamViewModel()
-        //viewModel.mock()
+        let scheduler: DispatchQueue =  .main
+        let repository = NewsStreamRepositoryImplementation(apiService: APIService(),
+                                                            scheduler: scheduler)
+        let newsStreamService = NewsStreamServiceImplementation(repository: repository)
+        let viewModel = NewsStreamViewModel( newsStreamService: newsStreamService ,
+                                            scheduler: scheduler)
+        
         NewsStreamView(viewModel: viewModel)
     }
 }
