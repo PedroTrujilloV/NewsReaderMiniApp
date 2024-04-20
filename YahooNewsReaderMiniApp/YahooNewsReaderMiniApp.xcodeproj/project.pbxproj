@@ -116,13 +116,11 @@
 			isa = PBXGroup;
 			children = (
 				C807FCA22BD2E029009AC277 /* YahooNewsReaderMiniAppApp.swift */,
+				C807FCA62BD2E029009AC277 /* Item.swift */,
 				C807FCA42BD2E029009AC277 /* ContentView.swift */,
-				C807FCD92BD30FA2009AC277 /* NewsStreamView.swift */,
-				C807FCDF2BD31653009AC277 /* NewsStreamViewModel.swift */,
-				C807FCE12BD32EE2009AC277 /* NewsStreamViewModel+Mock.swift */,
+				C807FCE32BD37DDF009AC277 /* NewsStream */,
 				C807FCDD2BD314D0009AC277 /* mockJSONDataResponse.json */,
 				C807FCD82BD30F70009AC277 /* Article */,
-				C807FCA62BD2E029009AC277 /* Item.swift */,
 				C807FCA82BD2E02C009AC277 /* Assets.xcassets */,
 				C807FCAA2BD2E02C009AC277 /* Preview Content */,
 			);
@@ -163,6 +161,16 @@
 				C807FCD62BD30020009AC277 /* Article+Mock.swift */,
 			);
 			path = Article;
+			sourceTree = "<group>";
+		};
+		C807FCE32BD37DDF009AC277 /* NewsStream */ = {
+			isa = PBXGroup;
+			children = (
+				C807FCD92BD30FA2009AC277 /* NewsStreamView.swift */,
+				C807FCDF2BD31653009AC277 /* NewsStreamViewModel.swift */,
+				C807FCE12BD32EE2009AC277 /* NewsStreamViewModel+Mock.swift */,
+			);
+			path = NewsStream;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
