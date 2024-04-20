@@ -1,0 +1,310 @@
+{
+    "id": "caad1e5a-5e70-4909-a194-9e1b8c61c577",
+    "type": "CONTENT",
+    "content": {
+        "title": "AJ Simon, Albany defensive standout and NFL draft prospect, dies at 25",
+        "pubDate": "2024-04-19T16:39:52Z",
+        "displayTime": "2024-04-19T16:39:52Z",
+        "subheadline": "Simon had visited with the Patriots ahead of next week's NFL draft.",
+        "isOpinion": false,
+        "presentation": null,
+        "liveBlogStatus": null,
+        "heroModule": {
+            "darkBackground": false,
+            "headlinePosition": "above",
+            "type": "standard"
+        },
+        "commentsAllowed": true,
+        "contentType": "STORY",
+        "isHosted": true,
+        "ampUrl": "",
+        "structuredSummary": {
+            "summaries": [
+                {
+                    "type": "text",
+                    "value": "Former University at Albany defensive lineman and 2024 NFL draft prospect Amitral \"AJ\" Simon has died at the age of 25, the school announced on Wednesday."
+                },
+                {
+                    "type": "text",
+                    "value": "\"The UAlbany football program was deeply saddened to learn of the passing of former student-athlete Amitral 'AJ' Simon this morning,\" Albany said in a statement."
+                }
+            ],
+            "source": "cap"
+        },
+        "provider": {
+            "url": "https://sports.yahoo.com/",
+            "displayName": "Yahoo Sports",
+            "logo": {
+                "type": "logo",
+                "originalUrl": "https://s.yimg.com/os/creatr-uploaded-images/2021-02/b6728df0-6bdc-11eb-b7bd-913b7afc7515",
+                "originalHeight": 400,
+                "originalWidth": 400,
+                "resolutions": [
+                    {
+                        "tag": "original",
+                        "url": "https://s.yimg.com/uu/api/res/1.2/2lVDVggwaje9HT.QojjqWA--~B/aD00MDA7dz00MDA7YXBwaWQ9eXRhY2h5b24-/https://s.yimg.com/os/creatr-uploaded-images/2021-02/b6728df0-6bdc-11eb-b7bd-913b7afc7515",
+                        "width": 400,
+                        "height": 400
+                    },
+                    {
+                        "tag": "100x50",
+                        "url": "https://s.yimg.com/uu/api/res/1.2/OfyjfiwFG_W4Dqwyad2vcw--~B/Zmk9ZmlsbDtoPTUwO3B5b2ZmPTA7dz0xMDA7YXBwaWQ9eXRhY2h5b24-/https://s.yimg.com/os/creatr-uploaded-images/2021-02/b6728df0-6bdc-11eb-b7bd-913b7afc7515",
+                        "width": 100,
+                        "height": 50
+                    }
+                ]
+            },
+            "lightLogo": {
+                "originalHeight": 100,
+                "originalWidth": 469,
+                "originalUrl": "https://s.yimg.com/os/creatr-uploaded-images/2021-02/d6cfeca0-6bdc-11eb-9fff-072dbeffa160",
+                "type": "lightlogo",
+                "resolutions": [
+                    {
+                        "url": "https://s.yimg.com/uu/api/res/1.2/F1BfKNybxRwKZSbWsVVdAw--~B/aD0xMDA7dz00Njk7YXBwaWQ9eXRhY2h5b24-/https://s.yimg.com/os/creatr-uploaded-images/2021-02/d6cfeca0-6bdc-11eb-9fff-072dbeffa160",
+                        "tag": "original",
+                        "height": 100,
+                        "width": 469
+                    },
+                    {
+                        "url": "https://s.yimg.com/uu/api/res/1.2/tv97T9BRLtnTtOL3dBusIQ--~B/Zmk9ZmlsbDtoPTUwO3B5b2ZmPTA7dz0xMDA7YXBwaWQ9eXRhY2h5b24-/https://s.yimg.com/os/creatr-uploaded-images/2021-02/d6cfeca0-6bdc-11eb-9fff-072dbeffa160",
+                        "tag": "100x50",
+                        "height": 50,
+                        "width": 100
+                    }
+                ]
+            },
+            "darkLogo": {
+                "originalHeight": 100,
+                "originalWidth": 513,
+                "originalUrl": "https://s.yimg.com/os/creatr-uploaded-images/2021-02/eea32ae0-6bdc-11eb-bf5e-5d7f15d13ff6",
+                "type": "darklogo",
+                "resolutions": [
+                    {
+                        "url": "https://s.yimg.com/uu/api/res/1.2/L5r8ccvvGTp4fcoafLKCAg--~B/aD0xMDA7dz01MTM7YXBwaWQ9eXRhY2h5b24-/https://s.yimg.com/os/creatr-uploaded-images/2021-02/eea32ae0-6bdc-11eb-bf5e-5d7f15d13ff6",
+                        "tag": "original",
+                        "height": 100,
+                        "width": 513
+                    },
+                    {
+                        "url": "https://s.yimg.com/uu/api/res/1.2/8ivOqKUcScynOSokmb5x4g--~B/Zmk9ZmlsbDtoPTUwO3B5b2ZmPTA7dz0xMDA7YXBwaWQ9eXRhY2h5b24-/https://s.yimg.com/os/creatr-uploaded-images/2021-02/eea32ae0-6bdc-11eb-bf5e-5d7f15d13ff6",
+                        "tag": "100x50",
+                        "height": 50,
+                        "width": 100
+                    }
+                ]
+            }
+        },
+        "previewUrl": null,
+        "providerContentUrl": "",
+        "canonicalUrl": {
+            "lang": "en-US",
+            "region": "US",
+            "site": "sports",
+            "url": "https://sports.yahoo.com/aj-simon-albany-defensive-standout-and-nfl-draft-prospect-dies-at-25-163952849.html"
+        },
+        "clickThroughUrl": {
+            "lang": "en-US",
+            "region": "US",
+            "site": "sports",
+            "url": "https://sports.yahoo.com/aj-simon-albany-defensive-standout-and-nfl-draft-prospect-dies-at-25-163952849.html"
+        },
+        "author": {
+            "image": {
+                "originalHeight": 400,
+                "originalWidth": 400,
+                "originalUrl": "https://o.aolcdn.com/images/dims?image_uri=https%3A%2F%2Fs.yimg.com%2Fos%2Fcreatr-uploaded-images%2F2023-10%2F827177e0-6018-11ee-9fef-22290ba0faa2&compress=1&progressive=1&quality=75&client=hawkeye&signature=99783e485f0eccbf7030fb851482377b994b62a1",
+                "resolutions": [
+                    {
+                        "height": 400,
+                        "tag": "original",
+                        "width": 400,
+                        "url": "https://s.yimg.com/uu/api/res/1.2/6XWdpYVE.C50nmLO4bqOQw--~B/aD00MDA7dz00MDA7YXBwaWQ9eXRhY2h5b24-/https://o.aolcdn.com/images/dims?image_uri=https%3A%2F%2Fs.yimg.com%2Fos%2Fcreatr-uploaded-images%2F2023-10%2F827177e0-6018-11ee-9fef-22290ba0faa2&compress=1&progressive=1&quality=75&client=hawkeye&signature=99783e485f0eccbf7030fb851482377b994b62a1"
+                    },
+                    {
+                        "height": 400,
+                        "tag": "400x400",
+                        "width": 400,
+                        "url": "https://s.yimg.com/uu/api/res/1.2/0QyerpBDyvCMdBXsd.6aEQ--~B/Zmk9ZmlsbDtoPTQwMDtweW9mZj0wO3c9NDAwO2FwcGlkPXl0YWNoeW9u/https://o.aolcdn.com/images/dims?image_uri=https%3A%2F%2Fs.yimg.com%2Fos%2Fcreatr-uploaded-images%2F2023-10%2F827177e0-6018-11ee-9fef-22290ba0faa2&compress=1&progressive=1&quality=75&client=hawkeye&signature=99783e485f0eccbf7030fb851482377b994b62a1"
+                    }
+                ]
+            },
+            "byline": "Contributing writer",
+            "description": "",
+            "displayName": "Sean Leahy"
+        },
+        "authors": [
+            {
+                "author": {
+                    "image": {
+                        "originalHeight": 400,
+                        "originalWidth": 400,
+                        "originalUrl": "https://o.aolcdn.com/images/dims?image_uri=https%3A%2F%2Fs.yimg.com%2Fos%2Fcreatr-uploaded-images%2F2023-10%2F827177e0-6018-11ee-9fef-22290ba0faa2&compress=1&progressive=1&quality=75&client=hawkeye&signature=99783e485f0eccbf7030fb851482377b994b62a1",
+                        "resolutions": [
+                            {
+                                "height": 400,
+                                "tag": "original",
+                                "width": 400,
+                                "url": "https://s.yimg.com/uu/api/res/1.2/6XWdpYVE.C50nmLO4bqOQw--~B/aD00MDA7dz00MDA7YXBwaWQ9eXRhY2h5b24-/https://o.aolcdn.com/images/dims?image_uri=https%3A%2F%2Fs.yimg.com%2Fos%2Fcreatr-uploaded-images%2F2023-10%2F827177e0-6018-11ee-9fef-22290ba0faa2&compress=1&progressive=1&quality=75&client=hawkeye&signature=99783e485f0eccbf7030fb851482377b994b62a1"
+                            },
+                            {
+                                "height": 400,
+                                "tag": "400x400",
+                                "width": 400,
+                                "url": "https://s.yimg.com/uu/api/res/1.2/0QyerpBDyvCMdBXsd.6aEQ--~B/Zmk9ZmlsbDtoPTQwMDtweW9mZj0wO3c9NDAwO2FwcGlkPXl0YWNoeW9u/https://o.aolcdn.com/images/dims?image_uri=https%3A%2F%2Fs.yimg.com%2Fos%2Fcreatr-uploaded-images%2F2023-10%2F827177e0-6018-11ee-9fef-22290ba0faa2&compress=1&progressive=1&quality=75&client=hawkeye&signature=99783e485f0eccbf7030fb851482377b994b62a1"
+                            }
+                        ]
+                    },
+                    "byline": "Contributing writer",
+                    "description": "",
+                    "displayName": "Sean Leahy"
+                }
+            }
+        ],
+        "thumbnail": {
+            "originalUrl": "https://s.yimg.com/os/creatr-uploaded-images/2024-04/e62ecf80-fe6a-11ee-bf5e-5b9119753b75",
+            "originalWidth": 5378,
+            "originalHeight": 3586,
+            "resolutions": [
+                {
+                    "height": 3586,
+                    "tag": "original",
+                    "width": 5378,
+                    "url": "https://s.yimg.com/uu/api/res/1.2/HNB.LVND9zhkJibnypKV4Q--~B/aD0zNTg2O3c9NTM3ODthcHBpZD15dGFjaHlvbg--/https://s.yimg.com/os/creatr-uploaded-images/2024-04/e62ecf80-fe6a-11ee-bf5e-5b9119753b75"
+                },
+                {
+                    "height": 500,
+                    "tag": "750",
+                    "width": 750,
+                    "url": "https://s.yimg.com/uu/api/res/1.2/GPPAfz43N76.02l.ZxOZ_A--~B/Zmk9ZmlsbDtoPTUwMDt3PTc1MDthcHBpZD15dGFjaHlvbg--/https://s.yimg.com/os/creatr-uploaded-images/2024-04/e62ecf80-fe6a-11ee-bf5e-5b9119753b75"
+                },
+                {
+                    "height": 240,
+                    "tag": "320x240",
+                    "width": 320,
+                    "url": "https://s.yimg.com/uu/api/res/1.2/eZW.tJigl9hvxe5dlG9h6A--~B/Zmk9ZmlsbDtoPTI0MDtweW9mZj0wO3c9MzIwO2FwcGlkPXl0YWNoeW9u/https://s.yimg.com/os/creatr-uploaded-images/2024-04/e62ecf80-fe6a-11ee-bf5e-5b9119753b75"
+                },
+                {
+                    "height": 500,
+                    "tag": "750x",
+                    "width": 750,
+                    "url": "https://s.yimg.com/uu/api/res/1.2/GPPAfz43N76.02l.ZxOZ_A--~B/Zmk9ZmlsbDtoPTUwMDt3PTc1MDthcHBpZD15dGFjaHlvbg--/https://s.yimg.com/os/creatr-uploaded-images/2024-04/e62ecf80-fe6a-11ee-bf5e-5b9119753b75"
+                }
+            ]
+        },
+        "adMeta": {
+            "siteAttribute": "wiki_topics=\"University_at_Albany,_SUNY;National_Football_League;Greg_Gattuso;2024_NFL_draft;Lineman_%28gridiron_football%29\" ctopid=\"2074500;2078500;2096000;2212000;2253000\" hashtag=\"news;2074500;2078500;2096000;2212000;2253000\" rs=\"lmsid:a077000000DAfMuAAL;revsp:us.sports.yahoo.com;lpstaid:caad1e5a-5e70-4909-a194-9e1b8c61c577;pct:story\"",
+            "site": null,
+            "spaceId": "954012750"
+        },
+        "canvass": {
+            "contextId": "caad1e5a-5e70-4909-a194-9e1b8c61c577",
+            "count": 0
+        },
+        "readingMeta": {
+            "wpm200": 90
+        },
+        "readMoreList": "",
+        "body": {
+            "modules": {},
+            "data": {
+                "partnerData": {
+                    "adMeta": {
+                        "hashtag": "news;football;sports",
+                        "isSupplySegment": "false",
+                        "lang": "en-US",
+                        "region": "US",
+                        "rs": "lmsid:a077000000DAfMuAAL;revsp:us.sports.yahoo.com;lpstaid:caad1e5a-5e70-4909-a194-9e1b8c61c577;pct:story",
+                        "site_attribute": "wiki_topics=\"University_at_Albany,_SUNY;National_Football_League;Greg_Gattuso;2024_NFL_draft;Lineman_%28gridiron_football%29\" ctopid=\"2074500;2078500;2096000;2212000;2253000\" hashtag=\"news;2074500;2078500;2096000;2212000;2253000\" rs=\"lmsid:a077000000DAfMuAAL;revsp:us.sports.yahoo.com;lpstaid:caad1e5a-5e70-4909-a194-9e1b8c61c577;lu:0;pct:story\"",
+                        "spaceid": "954012750",
+                        "site": "sports",
+                        "enabled": true,
+                        "pos": "LREC",
+                        "showBodyAds": true,
+                        "showPhotoAds": false
+                    },
+                    "contentType": "story",
+                    "cover": {
+                        "image": {
+                            "originalUrl": "https://s.yimg.com/os/creatr-uploaded-images/2024-04/e62ecf80-fe6a-11ee-bf5e-5b9119753b75",
+                            "originalHeight": 3586,
+                            "originalWidth": 5378,
+                            "resolutions": [
+                                {
+                                    "height": 859,
+                                    "url": "https://s.yimg.com/ny/api/res/1.2/Etpw3.lp7ijOmhds3Kem8w--/YXBwaWQ9aGlnaGxhbmRlcjtmaT1zdHJpbTtoPTg1OTt3PTE2NDA-/https://s.yimg.com/os/creatr-uploaded-images/2024-04/e62ecf80-fe6a-11ee-bf5e-5b9119753b75",
+                                    "width": 1640,
+                                    "tag": "fit-width-1640"
+                                },
+                                {
+                                    "height": 674,
+                                    "url": "https://s.yimg.com/ny/api/res/1.2/Inb1c.7MwKu8oa.gLWHAgw--/YXBwaWQ9aGlnaGxhbmRlcjtmaT1zdHJpbTtoPTY3NDt3PTEyMDA-/https://s.yimg.com/os/creatr-uploaded-images/2024-04/e62ecf80-fe6a-11ee-bf5e-5b9119753b75",
+                                    "width": 1200,
+                                    "tag": "fit-width-1200"
+                                },
+                                {
+                                    "height": 1200,
+                                    "url": "https://s.yimg.com/ny/api/res/1.2/5J8swUbBWtn3whoz6e5ZWA--/YXBwaWQ9aGlnaGxhbmRlcjtmaT1maWxsO2g9MTIwMDt3PTEyMDA-/https://s.yimg.com/os/creatr-uploaded-images/2024-04/e62ecf80-fe6a-11ee-bf5e-5b9119753b75",
+                                    "width": 1200,
+                                    "tag": "square-1200"
+                                },
+                                {
+                                    "height": 461,
+                                    "url": "https://s.yimg.com/ny/api/res/1.2/iLlVPwK2cZ.X5s35H1LXSA--/YXBwaWQ9aGlnaGxhbmRlcjtmaT1zdHJpbTtoPTQ2MTt3PTgyMA--/https://s.yimg.com/os/creatr-uploaded-images/2024-04/e62ecf80-fe6a-11ee-bf5e-5b9119753b75",
+                                    "width": 820,
+                                    "tag": "fit-width-820"
+                                },
+                                {
+                                    "height": 360,
+                                    "url": "https://s.yimg.com/ny/api/res/1.2/VIv.ANKBAwrEGlj4fj_Hhw--/YXBwaWQ9aGlnaGxhbmRlcjtmaT1zdHJpbTtoPTM2MDt3PTY0MA--/https://s.yimg.com/os/creatr-uploaded-images/2024-04/e62ecf80-fe6a-11ee-bf5e-5b9119753b75",
+                                    "width": 640,
+                                    "tag": "fit-width-640"
+                                },
+                                {
+                                    "height": 820,
+                                    "url": "https://s.yimg.com/ny/api/res/1.2/ghU.xOSo7F6YU2BTVLk_jg--/YXBwaWQ9aGlnaGxhbmRlcjtmaT1maWxsO2g9ODIwO3c9ODIw/https://s.yimg.com/os/creatr-uploaded-images/2024-04/e62ecf80-fe6a-11ee-bf5e-5b9119753b75",
+                                    "width": 820,
+                                    "tag": "square-820"
+                                },
+                                {
+                                    "height": 280,
+                                    "url": "https://s.yimg.com/ny/api/res/1.2/VkfIqumG5tIfZXe8TV6K9A--/YXBwaWQ9aGlnaGxhbmRlcjtmaT1zdHJpbTtoPTI4MDt3PTI4MA--/https://s.yimg.com/os/creatr-uploaded-images/2024-04/e62ecf80-fe6a-11ee-bf5e-5b9119753b75",
+                                    "width": 280,
+                                    "tag": "square-280"
+                                },
+                                {
+                                    "height": 224,
+                                    "url": "https://s.yimg.com/ny/api/res/1.2/7t4VvhsxZ3geSt8pCIekdg--/YXBwaWQ9aGlnaGxhbmRlcjtmaT1zdHJpbTtoPTIyNDt3PTMwMA--/https://s.yimg.com/os/creatr-uploaded-images/2024-04/e62ecf80-fe6a-11ee-bf5e-5b9119753b75",
+                                    "width": 300,
+                                    "tag": "fit-width-300"
+                                },
+                                {
+                                    "url": "https://s.yimg.com/ny/api/res/1.2/C0W1hAxVFhXFzP7z98Gjiw--/YXBwaWQ9aGlnaGxhbmRlcjt3PTE2NDA7aD0xMDk0/https://s.yimg.com/os/creatr-uploaded-images/2024-04/e62ecf80-fe6a-11ee-bf5e-5b9119753b75",
+                                    "width": 1640,
+                                    "height": 1094,
+                                    "tag": "max-width-1640"
+                                },
+                                {
+                                    "height": 3586,
+                                    "url": "https://s.yimg.com/ny/api/res/1.2/.yjrDKZdfMDKyzIOGzyDAw--/YXBwaWQ9aGlnaGxhbmRlcjtoPTM1ODY7dz01Mzc4/https://s.yimg.com/os/creatr-uploaded-images/2024-04/e62ecf80-fe6a-11ee-bf5e-5b9119753b75",
+                                    "width": 5378,
+                                    "tag": "original"
+                                }
+                            ]
+                        }
+                    },
+                    "hasScribble": false,
+                    "hostedType": "hosted",
+                    "lastModifiedTime": "",
+                    "spaceId": "954012750",
+                    "tpConsent": true,
+                    "type": "story",
+                    "url": "https://sports.yahoo.com/aj-simon-albany-defensive-standout-and-nfl-draft-prospect-dies-at-25-163952849.html",
+                    "uuid": "caad1e5a-5e70-4909-a194-9e1b8c61c577"
+                }
+            },
+            "markup": "<!DOCTYPE html><html lang=en><head></head><body></body></html>",
+            "schema": {}
+        }
+    }
+}

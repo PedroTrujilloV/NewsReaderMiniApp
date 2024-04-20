@@ -67,18 +67,18 @@ struct Provider: Codable {
 }
 
 struct Logo: Codable {
-    let type: logoType
+    let type: String?
     let originalUrl: String
     let originalHeight: Int
     let originalWidth: Int
     let resolutions: [Resolution]
 }
 
-enum logoType: Codable {
-    case darklogo
-    case lightlogo
-    case unknow
-}
+//enum logoType: Codable {
+//    case darklogo
+//    case lightlogo
+//    case unknow
+//}
 
 struct Resolution: Codable {
     let tag: String
@@ -102,10 +102,10 @@ struct ClickThroughUrl: Codable {
 }
 
 struct Author: Codable {
-    let image: Image
-    let byline: String
-    let description: String
-    let displayName: String
+    let image: Image?
+    let byline: String?
+    let description: String?
+    let displayName: String?
 }
 
 struct Image: Codable {
@@ -139,25 +139,26 @@ struct ReadingMeta: Codable {
 
 struct Body: Codable {
     let modules: [String: String] // Update this with the actual structure
-    let data: PartnerData
+    let data: PartnerData?
+    let markup: String?
 }
 
 struct PartnerData: Codable {
-    let adMeta: AdMeta
-    let contentType: String
-    let cover: Cover
-    let hasScribble: Bool
-    let hostedType: String
-    let lastModifiedTime: String
-    let spaceId: String
-    let tpConsent: Bool
-    let type: String
-    let url: String
-    let uuid: String
+    let adMeta: AdMeta?
+    let contentType: String?
+    let cover: Cover?
+    let hasScribble: Bool?
+    let hostedType: String?
+    let lastModifiedTime: String?
+    let spaceId: String?
+    let tpConsent: Bool?
+    let type: String?
+    let url: String?
+    let uuid: String?
 }
 
 struct Cover: Codable {
-    let image: Image
+    let image: Image?
 }
 
 
