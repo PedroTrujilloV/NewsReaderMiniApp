@@ -7,12 +7,39 @@
 
 import SwiftUI
 
+
 struct NewsStreamView: View {
+    @ObservedObject var viewModel: NewsStreamViewModel
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        List {
+            ForEach(viewModel.articleViewModels, id: \.id) { articleViewModel in
+                ArticleView(viewModel: articleViewModel)
+            }
+            if viewModel.isLoadingNextPage {
+                ProgressView() // Show a loading indicator when fetching the next page
+            }
+        }
+        .refreshable {
+            // Handle pull-to-refresh action here
+            if viewModel.isRefreshing == false {
+                viewModel.refresh()
+            }
+        }
+        .onAppear {
+            // Load initial data
+            viewModel.loadInitialData()
+        }
+        .padding( .horizontal, -20)
     }
 }
 
-#Preview {
-    NewsStreamView()
+struct NewsStreamView_Previews: PreviewProvider {
+    static var previews: some View {
+        let viewModel = NewsStreamViewModel()
+        //viewModel.mock()
+        NewsStreamView(viewModel: viewModel)
+    }
 }
+
+
