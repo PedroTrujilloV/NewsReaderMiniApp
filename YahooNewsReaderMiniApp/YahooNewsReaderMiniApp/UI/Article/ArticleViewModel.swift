@@ -17,8 +17,10 @@ class ArticleViewModel: ObservableObject, Identifiable {
     @Published var publishedDateString: String
     
     private let dateFormatter = DateFormatter()
+    private var identifier: UUID
         
     init(article: Article) {
+        self.identifier = UUID(uuidString: article.id)!
         let smallerResolution = article.content.thumbnail.resolutions.min { $0.height < $1.height }
         thumbnailURL = URL(string: smallerResolution?.url ?? article.content.thumbnail.originalUrl)
         resolution = CGSize(width: smallerResolution?.width ?? 100 , height: smallerResolution?.height ?? 100)
@@ -35,4 +37,10 @@ class ArticleViewModel: ObservableObject, Identifiable {
     }
     
     // TO - DO: Add methods for loading, error handling, etc.
+}
+
+extension ArticleViewModel: Equatable {
+    static func == (lhs: ArticleViewModel, rhs: ArticleViewModel) -> Bool {
+        return lhs.identifier == rhs.identifier
+    }
 }

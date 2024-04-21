@@ -12,10 +12,11 @@ struct ContentView: View {
 
     var body: some View {
         let scheduler: DispatchQueue =  .main
-        let repository = NewsStreamRepositoryImplementation(apiService: APIService(),
+        let repository = NewsStreamRepositoryImplementation(apiService: APIServiceImplementation(),
                                                             scheduler: scheduler)
         let newsStreamService = NewsStreamServiceImplementation(repository: repository)
-        let viewModel = NewsStreamViewModel( newsStreamService: newsStreamService ,
+        let viewModel = NewsStreamViewModel( newsStreamService: newsStreamService, 
+                                             isLoadingNextPage: repository.isLoadingNextPage ,
                                             scheduler: scheduler)
         
         NewsStreamView(viewModel: viewModel)
