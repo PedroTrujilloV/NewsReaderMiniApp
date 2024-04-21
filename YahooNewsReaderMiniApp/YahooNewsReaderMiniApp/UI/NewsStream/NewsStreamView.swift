@@ -10,30 +10,39 @@ import SwiftUI
 
 struct NewsStreamView: View {
     @ObservedObject var viewModel: NewsStreamViewModel
+    @State private var selectedArticle: ArticleViewModel? = nil
     
     var body: some View {
-        List {
-            ForEach(viewModel.articleViewModels, id: \.id) { articleViewModel in
-                ArticleView(viewModel: articleViewModel)
-                    .onAppear {
-                        if articleViewModel == viewModel.articleViewModels.last { // Detect if the last item is about to appear
-                            viewModel.reachScrollLimit() // Call method in view model
-                        }
+        NavigationView {
+            List {
+                ForEach(viewModel.articleViewModels, id: \.id) { articleViewModel in
+
+                    NavigationLink {
+                        ArticleDetailView(articleViewModel: articleViewModel)
+                    } label: {
+                        ArticleView(viewModel: articleViewModel)
+                            .onAppear {
+                                if articleViewModel == viewModel.articleViewModels.last {
+                                    viewModel.reachScrollLimit()
+                                }
+                            }
                     }
+                }
+                if viewModel.isLoadingNextPage {
+                    ProgressView()
+                }
             }
-            if viewModel.isLoadingNextPage {
-                ProgressView() // Show a loading indicator when fetching the next page
+            .refreshable {
+                if viewModel.isRefreshing == false {
+                    viewModel.refresh()
+                }
             }
-        }
-        .refreshable {
-            if viewModel.isRefreshing == false {
+            .onAppear {
                 viewModel.refresh()
             }
+            .padding( .horizontal, -20)
+            .navigationTitle("News Stream")
         }
-        .onAppear {
-            viewModel.refresh()
-        }
-        .padding( .horizontal, -20)
     }
 }
 
