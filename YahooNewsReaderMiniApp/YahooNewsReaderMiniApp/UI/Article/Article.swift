@@ -162,3 +162,16 @@ struct Cover: Codable {
 }
 
 
+extension Article: Equatable {
+    static func == (lhs: Article, rhs: Article) -> Bool {
+        lhs.id == rhs.id
+    }
+}
+
+extension Article: Hashable {
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
+    }
+}
+
+

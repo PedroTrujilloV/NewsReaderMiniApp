@@ -15,20 +15,23 @@ struct NewsStreamView: View {
         List {
             ForEach(viewModel.articleViewModels, id: \.id) { articleViewModel in
                 ArticleView(viewModel: articleViewModel)
+                    .onAppear {
+                        if articleViewModel == viewModel.articleViewModels.last { // Detect if the last item is about to appear
+                            viewModel.reachScrollLimit() // Call method in view model
+                        }
+                    }
             }
             if viewModel.isLoadingNextPage {
                 ProgressView() // Show a loading indicator when fetching the next page
             }
         }
         .refreshable {
-            // Handle pull-to-refresh action here
             if viewModel.isRefreshing == false {
                 viewModel.refresh()
             }
         }
         .onAppear {
-            // Load initial data
-            viewModel.loadInitialData()
+            viewModel.refresh()
         }
         .padding( .horizontal, -20)
     }
@@ -37,10 +40,11 @@ struct NewsStreamView: View {
 struct NewsStreamView_Previews: PreviewProvider {
     static var previews: some View {
         let scheduler: DispatchQueue =  .main
-        let repository = NewsStreamRepositoryImplementation(apiService: APIService(),
+        let repository = NewsStreamRepositoryImplementation(apiService: APIServiceImplementation(),
                                                             scheduler: scheduler)
         let newsStreamService = NewsStreamServiceImplementation(repository: repository)
-        let viewModel = NewsStreamViewModel( newsStreamService: newsStreamService ,
+        let viewModel = NewsStreamViewModel( newsStreamService: newsStreamService,
+                                             isLoadingNextPage: repository.isLoadingNextPage ,
                                             scheduler: scheduler)
         
         NewsStreamView(viewModel: viewModel)

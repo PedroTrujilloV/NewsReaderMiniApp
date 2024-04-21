@@ -8,7 +8,13 @@
 import Foundation
 import Combine
 
-class APIService {
+protocol APIService {
+    func fetchData(request: URLRequest) -> AnyPublisher<Data, Error>
+    func fetchNewsStream(snippetCount: String ) -> AnyPublisher<Data, Error>
+    func fetchNextPage(pager: Pagination, snippetCount: String ) -> AnyPublisher<Data, Error>
+}
+
+class APIServiceImplementation: APIService {
     
     private let baseURL = "https://ncp-gw-sports.media.yahoo.com/api/v1/gql/stream_view"
     
@@ -77,7 +83,6 @@ class APIService {
             let error = NSError(domain: "SerializationError", code: 0, userInfo: nil)
             return Fail(error: error).eraseToAnyPublisher()
         }
-        
         return fetchData(request: request)
     }
 }
