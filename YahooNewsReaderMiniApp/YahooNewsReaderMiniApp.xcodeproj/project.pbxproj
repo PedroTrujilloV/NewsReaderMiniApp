@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		C807FCA32BD2E029009AC277 /* YahooNewsReaderMiniAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C807FCA22BD2E029009AC277 /* YahooNewsReaderMiniAppApp.swift */; };
 		C807FCA52BD2E029009AC277 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C807FCA42BD2E029009AC277 /* ContentView.swift */; };
-		C807FCA72BD2E029009AC277 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = C807FCA62BD2E029009AC277 /* Item.swift */; };
 		C807FCA92BD2E02C009AC277 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C807FCA82BD2E02C009AC277 /* Assets.xcassets */; };
 		C807FCAC2BD2E02C009AC277 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C807FCAB2BD2E02C009AC277 /* Preview Assets.xcassets */; };
 		C807FCB62BD2E02C009AC277 /* YahooNewsReaderMiniAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C807FCB52BD2E02C009AC277 /* YahooNewsReaderMiniAppTests.swift */; };
@@ -34,6 +33,7 @@
 		C807FD2A2BD57345009AC277 /* NewsStreamModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C807FD282BD57345009AC277 /* NewsStreamModel.xcdatamodeld */; };
 		C807FD2D2BD5745C009AC277 /* ArticleEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C807FD2B2BD5745C009AC277 /* ArticleEntity+CoreDataClass.swift */; };
 		C807FD2E2BD5745C009AC277 /* ArticleEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C807FD2C2BD5745C009AC277 /* ArticleEntity+CoreDataProperties.swift */; };
+		C807FD372BD58D3B009AC277 /* NetworkImage in Frameworks */ = {isa = PBXBuildFile; productRef = C807FD362BD58D3B009AC277 /* NetworkImage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,7 +57,6 @@
 		C807FC9F2BD2E029009AC277 /* YahooNewsReaderMiniApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YahooNewsReaderMiniApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C807FCA22BD2E029009AC277 /* YahooNewsReaderMiniAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YahooNewsReaderMiniAppApp.swift; sourceTree = "<group>"; };
 		C807FCA42BD2E029009AC277 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		C807FCA62BD2E029009AC277 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		C807FCA82BD2E02C009AC277 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C807FCAB2BD2E02C009AC277 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C807FCB12BD2E02C009AC277 /* YahooNewsReaderMiniAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YahooNewsReaderMiniAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C807FD372BD58D3B009AC277 /* NetworkImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,8 +114,6 @@
 		C807FC962BD2E029009AC277 = {
 			isa = PBXGroup;
 			children = (
-				C807FD2B2BD5745C009AC277 /* ArticleEntity+CoreDataClass.swift */,
-				C807FD2C2BD5745C009AC277 /* ArticleEntity+CoreDataProperties.swift */,
 				C807FCCE2BD2E07C009AC277 /* README.md */,
 				C807FCA12BD2E029009AC277 /* YahooNewsReaderMiniApp */,
 				C807FCB42BD2E02C009AC277 /* YahooNewsReaderMiniAppTests */,
@@ -138,7 +136,6 @@
 			isa = PBXGroup;
 			children = (
 				C807FCA22BD2E029009AC277 /* YahooNewsReaderMiniAppApp.swift */,
-				C807FCA62BD2E029009AC277 /* Item.swift */,
 				C807FCA42BD2E029009AC277 /* ContentView.swift */,
 				C807FCF02BD4A470009AC277 /* Util */,
 				C807FCE62BD37FC9009AC277 /* DataSource */,
@@ -211,6 +208,8 @@
 			isa = PBXGroup;
 			children = (
 				C807FCE72BD37FF0009AC277 /* NewsStreamService.swift */,
+				C807FD2B2BD5745C009AC277 /* ArticleEntity+CoreDataClass.swift */,
+				C807FD2C2BD5745C009AC277 /* ArticleEntity+CoreDataProperties.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -267,6 +266,9 @@
 			dependencies = (
 			);
 			name = YahooNewsReaderMiniApp;
+			packageProductDependencies = (
+				C807FD362BD58D3B009AC277 /* NetworkImage */,
+			);
 			productName = YahooNewsReaderMiniApp;
 			productReference = C807FC9F2BD2E029009AC277 /* YahooNewsReaderMiniApp.app */;
 			productType = "com.apple.product-type.application";
@@ -339,6 +341,9 @@
 				Base,
 			);
 			mainGroup = C807FC962BD2E029009AC277;
+			packageReferences = (
+				C807FD352BD58D3B009AC277 /* XCRemoteSwiftPackageReference "NetworkImage" */,
+			);
 			productRefGroup = C807FCA02BD2E029009AC277 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -391,7 +396,6 @@
 				C807FCFA2BD4B600009AC277 /* ArticleDetailView.swift in Sources */,
 				C807FCD72BD30020009AC277 /* Article+Mock.swift in Sources */,
 				C807FCFF2BD4C7F6009AC277 /* HTMLStringView.swift in Sources */,
-				C807FCA72BD2E029009AC277 /* Item.swift in Sources */,
 				C807FD2E2BD5745C009AC277 /* ArticleEntity+CoreDataProperties.swift in Sources */,
 				C807FD2A2BD57345009AC277 /* NewsStreamModel.xcdatamodeld in Sources */,
 				C807FCF22BD4A484009AC277 /* Array+Extension.swift in Sources */,
@@ -491,7 +495,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -548,7 +552,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -732,6 +736,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C807FD352BD58D3B009AC277 /* XCRemoteSwiftPackageReference "NetworkImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/gonzalezreal/NetworkImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C807FD362BD58D3B009AC277 /* NetworkImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C807FD352BD58D3B009AC277 /* XCRemoteSwiftPackageReference "NetworkImage" */;
+			productName = NetworkImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		C807FD282BD57345009AC277 /* NewsStreamModel.xcdatamodeld */ = {

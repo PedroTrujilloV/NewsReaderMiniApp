@@ -3,22 +3,6 @@ import Combine
 import CoreData
 import Network
 
-class NetworkMonitor {
-    static let shared = NetworkMonitor()
-    
-    private let monitor = NWPathMonitor()
-    private let queue = DispatchQueue(label: "NetworkMonitor")
-    
-    private(set) var isReachable: Bool = false
-    
-    private init() {
-        monitor.pathUpdateHandler = { [weak self] path in
-            self?.isReachable = path.status == .satisfied
-        }
-        
-        monitor.start(queue: queue)
-    }
-}
 
 protocol NewsStreamRepository {
     var dataModel: AnyPublisher<[Article], Never> { get }
@@ -68,6 +52,10 @@ class NewsStreamRepositoryImplementation: NewsStreamRepository {
     private func updateSourceOfTruth(with articles: [Article]) {
         self.sourceOfTruth.append(contentsOf: articles)
         self.sourceOfTruth.removeDuplicates()
+    }
+    
+    private func updatePaginationData(with newsStreamResponse: NewsStreamResponse){
+        self.pager =  newsStreamResponse.data.topNewsStream.pagination
         self.isLoadingNextPageSubject.send(false)
     }
     
@@ -76,7 +64,7 @@ class NewsStreamRepositoryImplementation: NewsStreamRepository {
         apiService.fetchNewsStream(snippetCount: String(snippetCount))
             .decode(type: NewsStreamResponse.self, decoder: JSONDecoder())
             .receive(on: scheduler)
-            .sink(receiveCompletion: { [weak self] completion in
+            .sink(receiveCompletion: { completion in
                 switch completion {
                 case .finished:
                     // Handle successful completion (if needed)
@@ -84,11 +72,11 @@ class NewsStreamRepositoryImplementation: NewsStreamRepository {
                 case .failure(let error):
                     print("fetchNewsStream Received error: \(error)")
                     // Attempt to load cached articles from CoreData
-                    self?.loadCachedArticles()
+                    // self?.loadCachedArticles()
                 }
             }, receiveValue: { [weak self] newsStreamResponse in
-                self?.pager =  newsStreamResponse.data.topNewsStream.pagination
                 self?.updateSourceOfTruth(with: newsStreamResponse)
+                self?.updatePaginationData(with: newsStreamResponse)
             })
             .store(in: &cancellables)
 
@@ -99,19 +87,17 @@ class NewsStreamRepositoryImplementation: NewsStreamRepository {
         apiService.fetchNextPage(pager: self.pager, snippetCount: "10")
             .decode(type: NewsStreamResponse.self, decoder: JSONDecoder())
             .receive(on: scheduler)
-            .sink(receiveCompletion: { [weak self] completion in
+            .sink(receiveCompletion: { completion in
                 switch completion {
                 case .finished:
                     // Handle successful completion (if needed)
                     break
                 case .failure(let error):
                     print("fetchNextPage Received error: \(error)")
-                    // Attempt to load cached articles from CoreData
-                    self?.loadCachedArticles()
                 }
             }, receiveValue: { [weak self] newsStreamResponse in
-                self?.pager =  newsStreamResponse.data.topNewsStream.pagination
                 self?.updateSourceOfTruth(with: newsStreamResponse)
+                self?.updatePaginationData(with: newsStreamResponse)
             })
              .store(in: &cancellables)
     }
@@ -183,9 +169,10 @@ extension NewsStreamRepositoryImplementation {
         do {
             let encoder = JSONEncoder()
             encoder.outputFormatting = .prettyPrinted // Optional: Makes the JSON output readable
+            //let content = self.makeSimpleContentForLowMemoryUsage(from: content)
             let jsonData = try encoder.encode(content)
             if let jsonString = String(data: jsonData, encoding: .utf8) {
-                print(jsonString)
+                //print(jsonString)
                 return  jsonString
             } else {
                 print("🔴 Failed to convert JSON data to string.")
@@ -197,17 +184,39 @@ extension NewsStreamRepositoryImplementation {
         }
     }
     
+    private func makeSimpleContentForLowMemoryUsage(from content: Content) -> Content {
+        return Content(title: content.title, pubDate: content.pubDate, displayTime: content.displayTime, subheadline: content.subheadline, isOpinion: content.isOpinion, presentation: nil, liveBlogStatus: nil, heroModule: nil, commentsAllowed: content.commentsAllowed, contentType: content.contentType, isHosted: content.isHosted, ampUrl: nil, structuredSummary: nil, provider: content.provider, previewUrl: nil, providerContentUrl: "", canonicalUrl: nil, clickThroughUrl: nil, author: content.author, authors: nil, thumbnail: content.thumbnail, adMeta: nil, canvass: nil, readingMeta: nil, readMoreList: nil, body: nil)
+    }
+    
     private func decodedContentObjectFrom(jsonString: String) -> Content? {
-        do {
-            let jsonData = jsonString.data(using: .utf8)!
-            let decoder = JSONDecoder()
-            let content = try decoder.decode(Content.self, from: jsonData)
-            print("Name: \(content.title), date: \(content.pubDate)")
-            return content
-        } catch {
-            print("🔴 Error decoding JSON string: \(error)")
+        guard let data = jsonString.data(using: .utf8) else {
+            print("🔴 Error converting JSON string to data")
             return nil
         }
+        
+        var content: Content?
+        let decoder = JSONDecoder()
+        
+        // Create a JSONSerialization stream
+        let inputStream = InputStream(data: data)
+        inputStream.open()
+        
+        // Use JSONSerialization to read JSON objects one by one
+        do {
+            while inputStream.hasBytesAvailable {
+                if let jsonObject = try JSONSerialization.jsonObject(with: inputStream, options: []) as? [String: Any] {
+                    let jsonData = try JSONSerialization.data(withJSONObject: jsonObject, options: [])
+                    let decodedContent = try decoder.decode(Content.self, from: jsonData)
+                    content = decodedContent // Update content with the latest decoded object
+                    //print("Name: \(content.title), date: \(content.pubDate)")
+                }
+            }
+            inputStream.close()
+        } catch {
+            print("🔴 Error decoding JSON: \(error)")
+        }
+        
+        return content
     }
 }
 

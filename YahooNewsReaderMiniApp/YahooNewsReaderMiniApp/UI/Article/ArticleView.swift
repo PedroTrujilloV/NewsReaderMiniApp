@@ -6,16 +6,19 @@
 //
 
 import SwiftUI
+import NetworkImage
 
 struct ArticleView: View {
     @ObservedObject var viewModel: ArticleViewModel
     
     var body: some View {
-        VStack(alignment: .leading, spacing: 8) {
+        VStack(alignment: .center, spacing: 8) {
             HStack(alignment: .center) {
                 if let thumbnailURL = viewModel.thumbnailURL {
-                    AsyncImage(url: thumbnailURL)
-                        .frame(width: UIScreen.main.bounds.width * 0.4, height: viewModel.resolution.height)
+                    //AsyncImage(url: thumbnailURL)
+                    NetworkImage(url: thumbnailURL)
+                        .frame(width: UIScreen.main.bounds.width * 0.4,
+                               height: viewModel.resolution.height)
                         .aspectRatio(contentMode: .fill)
                         .cornerRadius(8)
                         .clipped()
@@ -31,9 +34,7 @@ struct ArticleView: View {
                 }
             }
         }
-        .frame(width: UIScreen.main.bounds.width * 0.94, height: .maximum( UIScreen.main.bounds.height * 0.22, viewModel.resolution.height))
-        .padding(8)
-        .background(Color.white)
+        .frame(width: UIScreen.main.bounds.width * 0.9, height: .maximum( UIScreen.main.bounds.height * 0.22, viewModel.resolution.height))
         .cornerRadius(8)
         .shadow(radius: 2)
     }
