@@ -13,7 +13,6 @@ struct ContentView: View {
 
     var body: some View {
         NewsStreamView(viewModel: viewModel)
-            .padding( .horizontal,   -20)
     }
 } 
 
@@ -37,6 +36,7 @@ struct ContentView_Previews: PreviewProvider {
         let viewModel = NewsStreamViewModel( newsStreamService: newsStreamService,
                                              isLoadingNextPage: repository.isLoadingNextPage ,
                                             scheduler: scheduler)
+        //let _ = viewModel.mock()
         ContentView(viewModel: viewModel)
     }
 }

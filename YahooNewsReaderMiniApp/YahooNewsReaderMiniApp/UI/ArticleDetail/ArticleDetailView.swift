@@ -17,7 +17,8 @@ struct ArticleDetailView: View {
                 Text(articleViewModel.title)
                     .font(.title)
                     .padding(.horizontal)
-                Text(articleViewModel.provider + "  " + articleViewModel.publishedDateString)
+                    .multilineTextAlignment(.center)
+                Text(articleViewModel.publishedDateString)
                     .font(.caption)
                     .foregroundColor(.gray)
                 
@@ -27,6 +28,7 @@ struct ArticleDetailView: View {
             }
             .padding()
         }
+       
     }
 }
 

@@ -27,11 +27,13 @@ struct NewsStreamView: View {
                                 }
                             }
                     }
+                    .listRowSeparator(.hidden)
                 }
                 if viewModel.isLoadingNextPage {
                     ProgressView()
                 }
             }
+            .padding( .horizontal, -20)
             .refreshable {
                 if viewModel.isRefreshing == false {
                     viewModel.refresh()
@@ -40,8 +42,8 @@ struct NewsStreamView: View {
             .onAppear {
                 viewModel.refresh()
             }
-            .padding( .horizontal, -20)
             .navigationTitle("News Stream")
+            
         }
     }
 }
@@ -66,9 +68,12 @@ struct NewsStreamView_Previews: PreviewProvider {
         let viewModel = NewsStreamViewModel( newsStreamService: newsStreamService,
                                              isLoadingNextPage: repository.isLoadingNextPage ,
                                             scheduler: scheduler)
-        
+        //let _ = viewModel.mock()
         NewsStreamView(viewModel: viewModel)
+        
     }
 }
+
+
 
 
