@@ -15,6 +15,7 @@ class ArticleViewModel: ObservableObject, Identifiable {
     @Published var resolution: CGSize
     @Published var publishedDate: Date
     @Published var publishedDateString: String
+    @Published var markup: String
     
     private let dateFormatter = DateFormatter()
     private var identifier: UUID
@@ -33,7 +34,7 @@ class ArticleViewModel: ObservableObject, Identifiable {
         publishedDate = newDate
         dateFormatter.dateStyle = .short
         publishedDateString = dateFormatter.string(from: newDate)
-        
+        markup = article.content.body?.markup ?? ""
     }
     
     // TO - DO: Add methods for loading, error handling, etc.
@@ -42,5 +43,11 @@ class ArticleViewModel: ObservableObject, Identifiable {
 extension ArticleViewModel: Equatable {
     static func == (lhs: ArticleViewModel, rhs: ArticleViewModel) -> Bool {
         return lhs.identifier == rhs.identifier
+    }
+}
+
+extension ArticleViewModel: Hashable {
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
     }
 }
