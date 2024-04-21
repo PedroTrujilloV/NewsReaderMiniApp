@@ -37,7 +37,6 @@ class ArticleViewModel: ObservableObject, Identifiable {
         markup = article.content.body?.markup ?? ""
     }
     
-    // TO - DO: Add methods for loading, error handling, etc.
 }
 
 extension ArticleViewModel: Equatable {
