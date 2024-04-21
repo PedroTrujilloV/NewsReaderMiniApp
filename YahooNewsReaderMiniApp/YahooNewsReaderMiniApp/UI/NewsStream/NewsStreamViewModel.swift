@@ -9,7 +9,6 @@ import Foundation
 import Combine
 import SwiftUI
 
-// NewsStreamViewModel to manage data source and pagination logic
 class NewsStreamViewModel: ObservableObject {
     
     typealias Scheduler = DispatchQueue
@@ -17,12 +16,9 @@ class NewsStreamViewModel: ObservableObject {
     @Published var isLoadingNextPage: Bool = false
     @Published var isRefreshing: Bool = false
 
-    
     private var newsStreamService: NewsStreamService
     private var cancellables = Set<AnyCancellable>()
-    
-    // TO - DO: Add methods for loading, error handling, etc.
-    
+        
     init<SchedulerType: Scheduler>(newsStreamService: NewsStreamService, 
                                    isLoadingNextPage: AnyPublisher<Bool, Never>,
                                    scheduler: SchedulerType) {
