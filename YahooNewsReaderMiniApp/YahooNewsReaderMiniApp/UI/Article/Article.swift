@@ -74,12 +74,6 @@ struct Logo: Codable {
     let resolutions: [Resolution]
 }
 
-//enum logoType: Codable {
-//    case darklogo
-//    case lightlogo
-//    case unknow
-//}
-
 struct Resolution: Codable {
     let tag: String
     let url: String

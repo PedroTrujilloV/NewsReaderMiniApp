@@ -6,27 +6,33 @@
 //
 
 import SwiftUI
-import SwiftData
+import CoreData
+
 
 @main
 struct YahooNewsReaderMiniAppApp: App {
-    var sharedModelContainer: ModelContainer = {
-        let schema = Schema([
-            Item.self,
-        ])
-        let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
-
-        do {
-            return try ModelContainer(for: schema, configurations: [modelConfiguration])
-        } catch {
-            fatalError("Could not create ModelContainer: \(error)")
-        }
-    }()
 
     var body: some Scene {
+        let scheduler: DispatchQueue =  .main
+        let persistentContainer: NSPersistentContainer = {
+             let container = NSPersistentContainer(name: "NewsStreamModel")
+             container.loadPersistentStores(completionHandler: { (storeDescription, error) in
+                 if let error = error {
+                     fatalError("Failed to load persistent stores: \(error)")
+                 }
+             })
+             return container
+         }()
+        let repository = NewsStreamRepositoryImplementation(apiService: APIServiceImplementation(),
+                                                            scheduler: scheduler,
+                                                            persistentContainer: persistentContainer)
+        let newsStreamService = NewsStreamServiceImplementation(repository: repository)
+        let viewModel = NewsStreamViewModel( newsStreamService: newsStreamService,
+                                             isLoadingNextPage: repository.isLoadingNextPage ,
+                                            scheduler: scheduler)
+        
         WindowGroup {
-            ContentView()
+            ContentView(viewModel: viewModel)
         }
-        .modelContainer(sharedModelContainer)
     }
 }
