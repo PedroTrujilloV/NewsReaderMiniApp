@@ -28,6 +28,10 @@ Feel free to reach out if you have any questions or need further clarification!
 
 ## App System Desing
 
+<img width="269" alt="Screenshot 2024-04-22 at 9 38 31 AM" src="https://github.com/PedroTrujilloV/NewsReaderMiniApp/assets/3638250/f20f20e6-18bb-47a1-91ba-a7f45a925bfa">
+<img width="271" alt="Screenshot 2024-04-22 at 9 39 08 AM" src="https://github.com/PedroTrujilloV/NewsReaderMiniApp/assets/3638250/3d9053c7-b2e4-44a6-a43f-a2e299b9e19f">
+
+
 To begin, I delineated the functional and non-functional requirements to guide the development process effectively.
 
 #### Functional Requirements:
@@ -63,7 +67,7 @@ It's important to note that we're excluding any features related to authenticati
 
 
 
-Once I have identified the entities I’m going to need, I proceed to create necessary data models that the app is going use. Some of those are: 
+After identifying the essential entities required for the application, I move forward to create the corresponding data models that will be utilized within the app. Among these models are:
 
 
 ￼￼<img src="https://github.com/PedroTrujilloV/NewsReaderMiniApp/assets/3638250/902325c7-79e5-416d-a2c9-b03430580a3d" alt="Image Description" width="60%">
