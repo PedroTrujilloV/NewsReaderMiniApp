@@ -90,4 +90,7 @@ An image is better than a thousand words,offering a clear depiction of our app's
         * ViewModels: Responsible for orchestrating data loading and presenting it to the views.
 * **Media Cache:** Acting as a media loader, this component retrieves images, files, and other static content from the Content Delivery Network. It caches this data on the device to prevent redundant queries and facilitates offline image viewing.
 
+##### Third party dependencies:
+For Media Caching I used [NetworkImage](https://github.com/gonzalezreal/NetworkImage). This is a package that simplifies loading, caching and persistence of images in your app, providing offline features to this. 
+
 Thanks for viewing!
