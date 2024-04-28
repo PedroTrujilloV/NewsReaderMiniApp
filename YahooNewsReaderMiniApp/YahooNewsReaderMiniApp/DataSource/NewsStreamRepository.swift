@@ -214,6 +214,8 @@ extension NewsStreamRepositoryImplementation {
             inputStream.close()
         } catch {
             print("🔴 Error decoding JSON: \(error)")
+            inputStream.close()
+            return nil
         }
         
         return content

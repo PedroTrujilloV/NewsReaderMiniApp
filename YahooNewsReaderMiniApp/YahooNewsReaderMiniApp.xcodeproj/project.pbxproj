@@ -83,6 +83,7 @@
 		C807FD292BD57345009AC277 /* NewsStreamModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NewsStreamModel.xcdatamodel; sourceTree = "<group>"; };
 		C807FD2B2BD5745C009AC277 /* ArticleEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ArticleEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
 		C807FD2C2BD5745C009AC277 /* ArticleEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ArticleEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		C807FD382BDF0D3C009AC277 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +136,7 @@
 		C807FCA12BD2E029009AC277 /* YahooNewsReaderMiniApp */ = {
 			isa = PBXGroup;
 			children = (
+				C807FD382BDF0D3C009AC277 /* Info.plist */,
 				C807FCA22BD2E029009AC277 /* YahooNewsReaderMiniAppApp.swift */,
 				C807FCA42BD2E029009AC277 /* ContentView.swift */,
 				C807FCF02BD4A470009AC277 /* Util */,
@@ -573,6 +575,7 @@
 				DEVELOPMENT_TEAM = S775VU6U75;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = YahooNewsReaderMiniApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -602,6 +605,7 @@
 				DEVELOPMENT_TEAM = S775VU6U75;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = YahooNewsReaderMiniApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
